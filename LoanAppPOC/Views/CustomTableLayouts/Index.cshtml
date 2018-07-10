@@ -1,0 +1,105 @@
+﻿@model LoanAppPOC.Models.CustomTableLayout
+
+@{
+    ViewBag.Title = "Client Details";
+}
+
+<h1>Client Details</h1>
+
+<div id="myGrid" style="height: 500px;width:100%;" class="ag-theme-material"></div>
+
+
+<div class="container" style="padding-top: 20px; padding-bottom:100px">
+    <div class="row">
+        <div class="col-md-offset-7 col-md-2">
+            <span id="gridSavedConfirmation" style="float:right">
+                <span style="font-size:24px; color:#12b807" class="glyphicon glyphicon-ok"></span>
+                <span style="color:#12b807; font-weight:800;"> Saved!</span>
+            </span>
+        </div>
+        <div class="col-md-3" style="padding-bottom:10px">
+            <button class="btn btn-primary" id="saveGridLayout" onclick="setCustomGridLayout()">Save Grid Layout</button>
+            <button class="btn btn-link" onclick="resetCustomGridLayout()">Reset</button>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/Scripts/ag-grid-enterprise.noStyle.js"></script>
+    <script src="~/Scripts/ClientDetailsJQuery.js"></script>
+
+    <script>
+
+        // specify the columns
+        var columnDefs = [
+            { headerName: "Company", field: "company" },
+            { headerName: "Market Vertical", field: "market" },
+            { headerName: "Profit", field: "profit" },
+            { headerName: "City", field: "city" },
+            { headerName: "State", field: "state" },
+            { headerName: "# of Employees", field: "employees" },
+            { headerName: "CEO Name", field: "ceo" },
+            { headerName: "Date Established", field: "dateEstablished" },
+        ];
+
+        // let the grid know which columns and what data to use
+        var gridOptions = {
+            columnDefs: columnDefs,
+            rowData: null,
+            onGridReady: function () {
+                getCustomGridLayout();
+            }
+        };
+
+        function getCustomGridLayout() {
+            $.get("@Url.Action("GetIndexGrid", "CustomTableLayouts")", function (serverResponse, savedState) {
+
+                var customLayout = JSON.parse(serverResponse);
+
+                //grab the ag-grid's column instructions (which is currently a string)
+                customLayout = customLayout["0"].JsonLayoutInstructions;
+
+                var savedState = JSON.parse(customLayout);
+                console.log(savedState);
+
+                gridOptions.columnApi.setColumnState(savedState);
+            });
+        }
+
+        //saves grid layout for page refresh and new browser sessions
+        function setCustomGridLayout() {
+            var savedState = JSON.stringify(gridOptions.columnApi.getColumnState());
+            var gridName = "clientDetails";
+
+            $.post('@Url.Action("PostCustomGridLayout", "CustomTableLayouts")', { "JsonLayoutInstructions": savedState, "GridName": gridName});
+        }
+
+        function resetCustomGridLayout() {
+            gridOptions.columnApi.resetColumnState();
+
+            ////ensures that the reset grid is saved for page refresh
+            var savedState = JSON.stringify(gridOptions.columnApi.getColumnState());
+            $.post('@Url.Action("PostCustomGridLayout", "CustomTableLayouts")', { "JsonLayoutInstructions": savedState });
+        }
+
+        //set license key
+        agGrid.LicenseManager.setLicenseKey("Evaluation_License_Valid_Until__11_August_2018__MTUzMzk0MjAwMDAwMA==6f92d56ec392de1c9f07ac3bc2cc7059");
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // lookup the container we want the Grid to use
+            var eGridDiv = document.querySelector('#myGrid');
+
+            // create the grid
+            new agGrid.Grid(eGridDiv, gridOptions);
+
+            fetch('http://localhost:62422/Scripts/clientData.json').then(function (response) {
+                return response.json();
+            }).then(function (data) {
+                gridOptions.api.setRowData(data);
+            });
+        });
+
+
+    </script>
+}

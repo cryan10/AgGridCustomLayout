@@ -1,0 +1,162 @@
+﻿[
+  {
+    "company": "Kwik Cleaners",
+    "market": "Home & Garden",
+    "profit": 350000,
+    "city": "Olmsted",
+    "state": "TN",
+    "employees": 100,
+    "ceo": "Daniel Smith",
+    "dateEstablished": "1990/12/12"
+  },
+  {
+    "company": "Green Acres",
+    "market": "Home & Garden",
+    "profit": 130000,
+    "city": "Austin",
+    "state": "TX",
+    "employees": 10,
+    "ceo": "Brianna Taylor",
+    "dateEstablished": "1970/10/12"
+  },
+  {
+    "company": "Urban Market",
+    "market": "Retail",
+    "profit": 4500000,
+    "city": "Columbus",
+    "state": "OH",
+    "employees": 200,
+    "ceo": "Mary Reicheart",
+    "dateEstablished": "1945/09/14"
+  },
+  {
+    "company": "Spaces",
+    "market": "Retail",
+    "profit": 1220000,
+    "city": "Chicago",
+    "state": "IL",
+    "employees": 100,
+    "ceo": "Sara Sheppard",
+    "dateEstablished": "1987/09/09"
+  },
+  {
+    "company": "BullsEye",
+    "market": "Retail",
+    "profit": 1200000,
+    "city": "Salt Lake City",
+    "state": "UT",
+    "employees": 1200,
+    "ceo": "Mark Hammel",
+    "dateEstablished": "1965/06/17"
+  },
+  {
+    "company": "AACLU",
+    "market": "Nonprofit",
+    "profit": 670000,
+    "city": "Cleveland",
+    "state": "TN",
+    "employees": 1000,
+    "ceo": "Matthew Doyle",
+    "dateEstablished": "2000/04/05"
+  },
+  {
+    "company": "Have-A-Dream",
+    "market": "Nonprofit",
+    "profit": 4500000,
+    "city": "Resting",
+    "state": "NC",
+    "employees": 500,
+    "ceo": "Thomas Hunter",
+    "dateEstablished": "2010/08/12"
+  },
+  {
+    "company": "Because I Said I Would",
+    "market": "Nonprofit",
+    "profit": 670000,
+    "city": "Kani",
+    "state": "WA",
+    "employees": 50,
+    "ceo": "Brenda Barnes",
+    "dateEstablished": "1999/12/02"
+  },
+  {
+    "company": "Kroger's",
+    "market": "Groceries",
+    "profit": 22000000,
+    "city": "Raleigh",
+    "state": "NC",
+    "employees": 10000,
+    "ceo": "Joe McDonough",
+    "dateEstablished": "1996/10/24"
+  },
+  {
+    "company": "Maria's Garden",
+    "market": "Home & Garden",
+    "profit": 34000000,
+    "city": "Berea",
+    "state": "OH",
+    "employees": 2000,
+    "ceo": "Sam Stiwald",
+    "dateEstablished": "2001/09/18"
+  },
+  {
+    "company": "Top's",
+    "market": "Groceries",
+    "profit": 12000000,
+    "city": "New York",
+    "state": "NY",
+    "employees": 5000,
+    "ceo": "Brent Doyle",
+    "dateEstablished": "2010/08/17"
+  },
+  {
+    "company": "Inspire Magazine",
+    "market": "Print/Media",
+    "profit": 350000,
+    "city": "New York",
+    "state": "NY",
+    "employees": 80,
+    "ceo": "Peter Doherty",
+    "dateEstablished": "1977/03/21"
+  },
+  {
+    "company": "Cleveland Tribune",
+    "market": "Print/Media",
+    "profit": 120000,
+    "city": "Putting",
+    "state": "MN",
+    "employees": 30,
+    "ceo": "Richard Baker",
+    "dateEstablished": "1990/07/07"
+  },
+  {
+    "company": "American Outfitters",
+    "market": "Retail",
+    "profit": 40000000,
+    "city": "Chicago",
+    "state": "IL",
+    "employees": 10000,
+    "ceo": "Tyler Jackson",
+    "dateEstablished": "1999/07/18"
+  },
+  {
+    "company": "Kohl's",
+    "market": "Retail",
+    "profit": 570500000,
+    "city": "Chicago",
+    "state": "IL",
+    "employees": 14000,
+    "ceo": "Clifford Booker",
+    "dateEstablished": "2008/10/02"
+  },
+  {
+    "company": "Sears",
+    "market": "Retail",
+    "profit": 761000000,
+    "city": "New York",
+    "state": "NY",
+    "employees": 22000,
+    "ceo": "Charles Schmidt",
+    "dateEstablished": "2011/06/04"
+  }
+]

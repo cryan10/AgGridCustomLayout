@@ -1,0 +1,82 @@
+﻿[
+  {
+    "company": "Kwik Cleaners",
+    "market": "Home & Garden",
+    "profit": 3000
+  },
+  {
+    "company": "Green Acres",
+    "market": "Home & Garden",
+    "profit": 1300
+  },
+  {
+    "company": "Urban Market",
+    "market": "Retail",
+    "profit": 48000
+  },
+  {
+    "company": "Spaces",
+    "market": "Retail",
+    "profit": 52000
+  },
+  {
+    "company": "BullsEye",
+    "market": "Retail",
+    "profit": 140000
+  },
+  {
+    "company": "AACLU",
+    "market": "Nonprofit",
+    "profit": 17000
+  },
+  {
+    "company": "Have-A-Dream",
+    "market": "Nonprofit",
+    "profit": 4000
+  },
+  {
+    "company": "Because I Said I Would",
+    "market": "Nonprofit",
+    "profit": 6200
+  },
+  {
+    "company": "Kroger's",
+    "market": "Groceries",
+    "profit": 140000
+  },
+  {
+    "company": "Maria's Garden",
+    "market": "Home & Garden",
+    "profit": 224000
+  },
+  {
+    "company": "Top's",
+    "market": "Groceries",
+    "profit": 82000
+  },
+  {
+    "company": "Inspire Magazine",
+    "market": "Print/Media",
+    "profit": 1500
+  },
+  {
+    "company": "Cleveland Tribune",
+    "market": "Print/Media",
+    "profit": 4800
+  },
+  {
+    "company": "American Outfitters",
+    "market": "Retail",
+    "profit": 4000
+  },
+  {
+    "company": "Kohl's",
+    "market": "Retail",
+    "profit": 140000
+  },
+  {
+    "company": "Sears",
+    "market": "Retail",
+    "profit": 230000
+  }
+]
